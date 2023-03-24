@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """Start link class to table in database
 """
 import sys
@@ -15,4 +15,3 @@ if __name__ == "__main__":
     session = Session()
     for instance in session.query(State).order_by(State.id):
         print(instance.id, instance.name, sep=": ")
-
